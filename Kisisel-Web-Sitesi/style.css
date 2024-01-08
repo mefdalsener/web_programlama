@@ -1,0 +1,272 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+
+}
+
+.img-fluid-p {
+    max-width: 100%;
+    height: auto;
+    border-radius: 13px;
+}
+
+#main {
+    text-align: center;
+}
+
+.head {
+    color: #0E6D59;
+    font-family: 'Homemade Apple', cursive;
+    font-size: 7rem;
+    margin: 0.75rem;
+}
+
+.nav-link {
+    color: #333333;
+    padding: 0.5rem 3rem;
+    text-decoration: none;
+    font-family: 'Josefin Slab', serif;
+    transition: color 0.4s ease;
+}
+
+
+.nav-link:hover {
+    border-top: 0.1rem solid #333333;
+    border-bottom: 0.1rem solid #333333;
+    transition: all 0.4s;
+}
+
+.star-dark {
+    border-color: #0E6D59;
+    border: none;
+    border-top: 0.4rem solid #0E6D59;
+    border-radius: 10px;
+    max-width: 40rem;
+    margin: 2.5rem auto;
+    overflow: visible;
+    height: 0;
+}
+
+.star-dark::after {
+    content: "\2948";
+    color: #0E6D59;
+    background-color: #fff;
+    font-weight: 900;
+    font-size: 3.2rem;
+    position: relative;
+    top: -23px;
+    padding: 0 8px;
+}
+
+
+
+/*ABOUT ME*/
+
+.con-text {
+    color: #fff;
+    font-size: 3rem;
+    font-family: 'Josefin Slab', serif;
+}
+
+.about-h {
+    color: #0E6D59;
+    font-weight: bold;
+    font-size: 4rem;
+}
+
+#about-me .col {
+    float: left;
+    width: 50%;
+    padding: 1rem;
+}
+
+#about-me .container {
+    text-align: center;
+
+}
+
+#about-me .ustDiv {
+    padding: 2rem;
+}
+
+#about-me .altDiv {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: #0E6D59;
+    border-radius: 3rem;
+}
+
+#about-me .altDiv .solDiv,
+#about-me .altDiv .sagDiv {
+    width: 50%;
+    flex: 1;
+}
+
+#about-me .altDiv .sagDiv {
+    text-align: justify;
+    margin: 0 3rem;
+}
+
+#about-me .altDiv .solDiv {
+    margin: 0 3rem;
+}
+
+#about-me .sagDiv{
+    padding-top: 5rem;
+}
+
+/*PORTFOLIO*/
+
+.por-text {
+    color: #333333;
+    font-size: 3rem;
+    font-family: 'Josefin Slab', serif;
+}
+
+.por-h {
+    font-weight: bold;
+    font-size: 4rem;
+    color: #0E6D59;
+}
+
+#portfolio .ustDiv {
+    padding: 2rem;
+}
+
+.portfolio-col {
+    text-align: center;
+    display: flex;
+    margin: 0 12rem;
+}
+
+.portfolio-item {
+    width: 20%;
+    padding: 0 5rem;
+    margin-bottom: 2rem;
+}
+
+
+.portfolio-item {
+    position: relative;
+}
+
+.portfolio-item img {
+    display: block;
+}
+
+.img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    opacity: 0;
+    transition: all 0.4s;
+
+
+}
+
+.img-overlay .icon {
+    color: #0E6D59;
+    font-size: 8rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -45%);
+}
+
+.portfolio-item:hover .img-overlay {
+    opacity: 0.7;
+    border-radius: 13px;
+}
+
+.gallery {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 5rem;
+    margin: 0 30rem;
+}
+
+.gallery-item {
+    width: 50%;
+    padding: 0 0.2rem;
+    margin-bottom: 0.2rem;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    border: 1px solid #ddd;
+}
+
+/*CONTACT*/
+
+.contact-ustDiv {
+    margin: 2rem;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    background-color: #0E6D59;
+    padding: 4rem;
+}
+
+.contact-i {
+    text-align: center;
+    padding: 3rem 10rem;
+}
+
+.contact-mail {
+    display: flex;
+    flex-direction: column;
+    margin: 0 30rem;
+}
+
+.contact-mail label,
+.contact-mail input {
+    margin-bottom: 1rem;
+}
+
+.contact-mail input {
+    height: 3rem;
+}
+
+.contact-mail #message {
+    height: 15rem;
+}
+
+.con-in{
+    display: flex;
+    width: 100%;
+}
+
+.div-1, .div-2{
+    width: 50%;
+    box-sizing: border-box;
+    padding: 2rem;
+}

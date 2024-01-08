@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive tasarımı</title>
+    <style>
+        h1 {
+            font-size: 40px;
+        }
+
+        @media screen and (max-width:700px) {
+            h1 {
+                font-size: 30px;
+                color: darkcyan;
+            }
+        }
+
+        @media screen and (max-width:400px) {
+            h1 {
+                font-size: 20px;
+                color: red;
+            }
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .kutu {
+            width: 25%;
+            height: 250px;
+            background-color: skyblue;
+            float: left;
+            border: 1px solid black;
+        }
+
+        @media screen and (max-width: 900px) {
+            .kutu {
+                width: 33.3%
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .kutu {
+                width: 50%
+            }
+        }
+
+        @media screen and (max-width:600px) {
+            .kutu {
+                width: 50%
+            }
+
+        }
+
+        @media screen and (max-width: 400px) {
+            .kutu {
+                width: 100%;
+            }
+
+        }
+
+        img {
+            max-width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+
+    <div class="kutu">
+        <img src="images/image01.jpg" alt="">
+    </div>
+
+    <div class="kutu">
+        <img src="indir.jpg" alt="">
+    </div>
+    <div class="kutu">
+        <img src="images/image01.jpg" alt="">
+    </div>
+    <div class="kutu">
+        <img src="indir.jpg" alt="">
+    </div>
+    <div class="kutu">
+        <img src="images/image01.jpg" alt="">
+    </div>
+</body>
+
+</html>
