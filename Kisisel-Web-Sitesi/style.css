@@ -33,7 +33,12 @@ html {
     color: #0E6D59;
     font-family: 'Homemade Apple', cursive;
     font-size: 7rem;
-    margin: 0.75rem;
+    margin: 0.75rem;    
+}
+
+.head a{
+    color: #0E6D59;
+    text-decoration: none;
 }
 
 .nav-link {
